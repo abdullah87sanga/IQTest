@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -56,6 +55,7 @@ public class TestActivity extends AppCompatActivity implements RadioGroup.OnChec
     boolean exameTaked = false;
     //the name and the age sended from main activity
     String name, age;
+    String result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -226,8 +226,9 @@ public class TestActivity extends AppCompatActivity implements RadioGroup.OnChec
         text01.setText(getString(R.string.welcome, name));
 
         TextView text02 = layout.findViewById(R.id.score);
-        text02.setText(MessageFormat.format("{0}{1}{2}", String.format("%d", score),
-                getString(R.string.of10), getString(R.string.points)));
+        result=MessageFormat.format("{0}{1}{2}", String.format("%d", score),
+                getString(R.string.of10), getString(R.string.points));
+        text02.setText(result);
 
         // show the toast
         Toast toast = new Toast(getApplicationContext());
@@ -285,7 +286,15 @@ public class TestActivity extends AppCompatActivity implements RadioGroup.OnChec
             }
         }
     }
-
+    public void share(View view) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, result);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "IQ Test results");
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
     @Override
     public void onBackPressed() {
         Intent mainAct = new Intent(this, MainActivity.class);

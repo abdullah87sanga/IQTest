@@ -733,8 +733,15 @@
                 android:layout_weight="1"
                 style="@style/style_button"
                 android:onClick="showAnswer"
-                android:text="@string/answers"
-                />
+                android:text="@string/answers" />
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/style_button"
+                android:onClick="share"
+                android:text="share" />
         </LinearLayout>
     </LinearLayout>
 

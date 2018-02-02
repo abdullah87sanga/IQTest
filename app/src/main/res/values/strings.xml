@@ -1,9 +1,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">IQ Test</string>
-    <string name="began_test">began test</string>
+    <string name="begin_test">begin test</string>
     <string name="iq_test_history">iq test history</string>
     <string name="enter_your_name">Enter your name</string>
-    <string name="enter_your_age">Enter your Age</string>
+    <string name="enter_your_age">Enter your age</string>
     <string name="history_header">History of the IQ test</string>
     <string name="history1">Paul Broca (1824 – 1880) and Sir Francis Galton (1822 – 1911) were among the first scientists to think about measuring intelligence. They thought they could determine intelligence by measuring the size of the human skull. They assumed that the larger the skull, the smarter the person.</string>
     <string name="history2">Around the same time, scientist Wilhelm Wundt (1932 – 1920) used introspection - the human ability to reflect on their own thoughts - as the measure of intelligence. Nowadays their methods and ideas are considered to be outmoded and are for sure no longer used for IQ tests, but they form a fundamental part of the history of the IQ test.</string>

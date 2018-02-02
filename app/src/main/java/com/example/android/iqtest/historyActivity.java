@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * Created by v4 on 24/01/2018.
- */
+
 
 public class historyActivity extends AppCompatActivity {
     @Override
