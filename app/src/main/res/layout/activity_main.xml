@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        tools:context="com.example.android.iqtest.MainActivity"
+        android:background="@drawable/d">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zero_dp"
+            android:layout_weight="5"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/iq2" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_name"
+            android:inputType="textCapWords"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_age"
+            android:inputType="textCapWords|number"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:paddingTop="@dimen/padding15">
+
+            <Button
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:text="@string/iq_test_history"
+                android:layout_weight="1"
+                android:onClick="openHistory"
+                style="@style/style_button"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"/>
+
+            <Button
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:text="@string/began_test"
+                android:layout_weight="1"
+                android:onClick="openTest"
+                style="@style/style_button"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+

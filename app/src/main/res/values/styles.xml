@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Customize your theme here. -->
+    <style name="style_question_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/question_back</item>
+        <item name="android:padding">@dimen/padding10</item>
+    </style>
+
+    <!-- Customize your theme here. -->
+    <style name="style_view">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_marginBottom">@dimen/padding10</item>
+        <item name="android:layout_marginTop">@dimen/padding10</item>
+    </style>
+
+    <style name="style_question">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingBottom">@dimen/padding10</item>
+        <item name="android:paddingLeft">@dimen/padding10</item>
+        <item name="android:paddingRight">@dimen/padding10</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="style_answer">
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+    <style name="style_button">
+        <item name="android:layout_marginLeft">@dimen/padding15</item>
+        <item name="android:layout_marginRight">@dimen/padding15</item>
+        <item name="android:shadowColor">#A8A8A8</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/buttonshape</item>
+
+    </style>
+</resources>
+
+
+
+
+
