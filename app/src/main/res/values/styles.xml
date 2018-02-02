@@ -34,7 +34,7 @@
         <item name="android:visibility">invisible</item>
         <item name="android:layout_gravity">center</item>
     </style>
-    
+
     <style name="style_button">
         <item name="android:layout_marginLeft">@dimen/padding15</item>
         <item name="android:layout_marginRight">@dimen/padding15</item>
